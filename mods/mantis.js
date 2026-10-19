@@ -1,0 +1,51 @@
+elements.mantis = {
+	color: "#607300",
+	behavior: [
+		"XX|XX|M2%3 AND SW:water,salt_water,sugar_water,dirty_water,seltzer%7",
+		"XX|FX%0.5|CR:slime%0.01 AND BO",
+		"XX|M1|XX"
+	],
+	reactions: {
+		"fly": { elem2:null, chance:0.5, func:behaviors.FEEDPIXEL },
+		"ant": { elem2:null, chance:0.5, func:behaviors.FEEDPIXEL },
+		"firefly": { elem1:"meat", elem2:null, chance:0.5 },
+		"stink_bug": { elem2:null, chance:0.55, func:behaviors.FEEDPIXEL },
+		"snail": { elem2:"limestone", chance:0.05, func:behaviors.FEEDPIXEL },
+		"slug": { elem2:null, chance:0.2, func:behaviors.FEEDPIXEL },
+		"worm": { elem2:null, chance:0.2, func:behaviors.FEEDPIXEL },
+		"spider": { elem2:null, chance:0.2, func:behaviors.FEEDPIXEL },
+		"algae": { elem2:null, chance:0.5, func:behaviors.FEEDPIXEL },
+		"kelp": { elem2:"water", chance:0.5, func:behaviors.FEEDPIXEL },
+		"oxygen": { elem2:"carbon_dioxide", chance:0.5 },
+		"dead_bug": { elem2:null, chance:0.2, func:behaviors.FEEDPIXEL },
+		"mercury": { elem1:"rotten_meat", chance:0.1 },
+		"bleach": { elem1:"rotten_meat", chance:0.1 },
+		"infection": { elem1:"rotten_meat", chance:0.025 },
+		"uranium": { elem1:"water", chance:1 },
+		"cyanide": { elem1:"rotten_meat", chance:0.1 },
+		"chlorine": { elem1:"meat", chance:0.1 },
+		"alcohol": { elem1:"meat", chance:0.025 },
+		"dirty_water": { elem1:"rotten_meat", chance:0.0001 },
+		"pool_water": { elem1:"rotten_meat", chance:0.005 },
+		"vinegar": { elem1:"rotten_meat", chance:0.001 }
+	},
+	foodNeed: 10,
+	baby: "tnt",
+	eggColor:"#717c80",
+	temp: 19.1,
+	tempHigh: 100,
+	stateHigh: "cooked_meat",
+	stateHighColor: "#CDAF96",
+	onStateHigh: function(pixel) {
+		releaseElement(pixel,"steam");
+	},
+	tempLow: -18,
+	stateLow: "frozen_meat",
+	category:"life",
+	breakInto: "meat",
+	burn:15,
+	burnTime:300,
+	state: "solid",
+	density: 1450,
+	conduct: 0.2
+};
