@@ -1,5 +1,5 @@
 elements.mantis = {
-	color: "#234ca64c",
+	color: "#008000",
 	behavior: [
 		"XX|XX|M2%3 AND SW:water,salt_water,sugar_water,dirty_water,seltzer%7",
 		"XX|FX%0.5|BO",
