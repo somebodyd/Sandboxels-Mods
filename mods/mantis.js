@@ -1,8 +1,8 @@
 elements.mantis = {
-	color: "#607300",
+	color: "#234ca64c",
 	behavior: [
 		"XX|XX|M2%3 AND SW:water,salt_water,sugar_water,dirty_water,seltzer%7",
-		"XX|FX%0.5|CR:water%0.01 AND BO",
+		"XX|FX%0.5|BO",
 		"XX|M1|XX"
 	],
 	reactions: {
@@ -30,16 +30,16 @@ elements.mantis = {
 		"vinegar": { elem1:"rotten_meat", chance:0.001 }
 	},
 	foodNeed: 10,
-	baby: "tnt",
+	baby: "mantis",
 	eggColor:"#717c80",
 	temp: 19.1,
 	tempHigh: 100,
-	stateHigh: "cooked_meat",
+	stateHigh: "dead_bug",
 	stateHighColor: "#CDAF96",
 	tempLow: -18,
-	stateLow: "frozen_meat",
+	stateLow: "dead_bug",
 	category:"life",
-	breakInto: "meat",
+	breakInto: "dead_bug",
 	burn:15,
 	burnTime:300,
 	state: "solid",
