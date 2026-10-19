@@ -6,8 +6,8 @@ elements.mantis = {
 		"XX|M1|XX"
 	],
 	reactions: {
-		"fly": { elem2:null, chance:0.5, func:behaviors.FEEDPIXEL },
-		"ant": { elem2:null, chance:0.5, func:behaviors.FEEDPIXEL },
+		"fly": {elem1: "mantis", elem2: null},
+		"ant": {elem1: "mantis", elem2: null},
 		"firefly": { elem1:"meat", elem2:null, chance:0.5 },
 		"stink_bug": { elem2:null, chance:0.55, func:behaviors.FEEDPIXEL },
 		"snail": { elem2:"limestone", chance:0.05, func:behaviors.FEEDPIXEL },
