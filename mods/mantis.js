@@ -36,9 +36,6 @@ elements.mantis = {
 	tempHigh: 100,
 	stateHigh: "cooked_meat",
 	stateHighColor: "#CDAF96",
-	onStateHigh: function(pixel) {
-		releaseElement(pixel,"steam");
-	},
 	tempLow: -18,
 	stateLow: "frozen_meat",
 	category:"life",
@@ -48,4 +45,4 @@ elements.mantis = {
 	state: "solid",
 	density: 1450,
 	conduct: 0.2
-};
+}
