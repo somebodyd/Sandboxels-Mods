@@ -2,7 +2,7 @@ elements.mantis = {
 	color: "#607300",
 	behavior: [
 		"XX|XX|M2%3 AND SW:water,salt_water,sugar_water,dirty_water,seltzer%7",
-		"XX|FX%0.5|CR:slime%0.01 AND BO",
+		"XX|FX%0.5|CR:water%0.01 AND BO",
 		"XX|M1|XX"
 	],
 	reactions: {
