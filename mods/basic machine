@@ -1,0 +1,17 @@
+elements.lighter: {
+	color: "#c44f45",
+	tick: function(pixel) {
+		if (pixel.charge) {
+			burnPixel(pixel);
+		}
+		doDefaults(pixel);
+	},
+	burn: 90,
+	burnTime: 1000,
+	properties: { burning:false },
+	burning: true,
+	density: 2000,
+	conduct: 1,
+	state: "solid",
+	category: "weapons"
+},
